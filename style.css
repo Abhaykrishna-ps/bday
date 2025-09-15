@@ -1,13 +1,11 @@
 /* ========== HOME PAGE STYLES ========== */
 body.home {
-  background: url("WhatsApp Image 2025-09-15 at 20.18.59_62168ca1.jpg") no-repeat center center scroll;
-  background-size: contain;           
-  background-position: center center; 
-  background-color: #000;             
+  background: url("achu1.jpg") no-repeat center center fixed;
+  background-size: cover;       /* Default: cover for large screens */
   margin: 0;
   height: 100vh;
   overflow: hidden;
-  color: #fff;                      
+  color: #fff;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
   display: flex;
@@ -15,6 +13,13 @@ body.home {
   justify-content: center;
   align-items: center;
   padding: 20px;
+}
+
+/* Force full fill on smaller screens */
+@media (max-width: 768px) {
+  body.home {
+    background-size: 100% 100%;   /* stretch to fill mobile screens */
+  }
 }
 
 /* Hearts container */
@@ -88,4 +93,3 @@ p {
     opacity: 0;
   }
 }
-

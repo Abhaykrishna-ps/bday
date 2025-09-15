@@ -1,0 +1,90 @@
+/* ========== HOME PAGE STYLES ========== */
+body.home {
+  background: url("achu1.jpg") no-repeat center center scroll;
+  background-size: contain;           
+  background-position: center center; 
+  background-color: #000;             
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  color: #fff;                      
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Hearts container */
+.heart-container {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Content container */
+.container {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  animation: fadeInUp 2s ease;
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Typewriter heading */
+.typewriter {
+  overflow: hidden;
+  border-right: .15em solid white;
+  white-space: nowrap;
+  margin: 0 auto 20px;
+  letter-spacing: .05em;
+  animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+  font-size: clamp(1.5em, 5vw, 2.5em);
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white; }
+}
+
+/* Paragraph */
+p {
+  font-size: clamp(1em, 3.5vw, 1.2em);
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+}
+
+/* Floating hearts */
+.heart {
+  position: absolute;
+  background: url('https://i.imgur.com/fHYkkKZ.png') no-repeat center/contain;
+  animation: float linear infinite;
+  opacity: 0.7;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(100vh) scale(1);
+    opacity: 0;
+  }
+  50% { opacity: 1; }
+  100% {
+    transform: translateY(-10vh) scale(1.5);
+    opacity: 0;
+  }
+}

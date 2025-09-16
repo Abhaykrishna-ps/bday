@@ -4,28 +4,27 @@
   <meta charset="UTF-8">
   <title>Happy Birthday Bhavya 🎉</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Handwriting-style font -->
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Pacifico&display=swap" rel="stylesheet">
 </head>
-<body class="home">
-  <div class="background-overlay"></div>
-  <div class="heart-container"></div>
-
+<body>
   <div class="container">
-    <h1 class="typewriter">🎂 Happy Birthday, Bhavya! 🎉</h1>
-    <p>Wishing the most beautiful soul a day filled with love, laughter, and everything your heart desires. 💖</p>
-  </div>
+    <!-- Image at the top -->
+    <img src="achu1.jpg" alt="Bhavya" class="top-image">
 
-  <script>
-    // Floating Hearts Animation
-    const heartContainer = document.querySelector('.heart-container');
-    function createHeart() {
-      const heart = document.createElement('div');
-      heart.classList.add('heart');
-      heart.style.left = Math.random() * 100 + "vw";
-      heart.style.animationDuration = 2 + Math.random() * 3 + "s";
-      heartContainer.appendChild(heart);
-      setTimeout(() => heart.remove(), 5000);
-    }
-    setInterval(createHeart, 300);
-  </script>
+    <!-- Greeting text -->
+    <h1>🎂 Happy Birthday, Bhavya! 🎉</h1>
+    <p class="greeting">
+      On this special day, I wish you endless happiness, laughter, and love.  
+      May every moment bring you closer to your dreams, and may life bless you  
+      with beautiful memories to cherish forever. You deserve nothing less than  
+      all the joy in the world. 💖
+    </p>
+
+    <!-- Spotify Playlist Button -->
+    <a href="https://open.spotify.com/playlist/0TnovmkDpPxAzEN8uvNOcq?si=OTCuEbnjQ1mLJ-3cPWB39Q" target="_blank" class="btn">
+      🎶 Listen to Our Songs
+    </a>
+  </div>
 </body>
 </html>
